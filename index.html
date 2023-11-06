@@ -21,7 +21,9 @@
   </head>
   <body style="font-family: poppins;">
 <!-- navbar -->
-<nav class="navbar navbar-expand-lg  fixed-top">
+<nav class="navbar navbar-expand-lg  fixed-top" style="background-color: rgba(255, 255, 255, 0.3)! important;
+  backdrop-filter: blur(4px);
+">
   <div class="container">
     <a class="navbar-brand fw-bold" href="#" style="color: #29cf98">Jihad</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -163,7 +165,7 @@
         <div class="card " style="width: 18rem;">
           <img src="img/Al-quran online - Google Chrome 19_08_2023 20_51_20.png" class="card-img-top img3" alt="...">
           <div class="card-body d-none">
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <p class="card-text">The website I created for Muslims, I created this website using HTML, CSS, Bootstrap and Javascript</p>
           </div>
         </div>
       </div>
@@ -171,7 +173,7 @@
         <div class="card" style="width: 18rem;">
           <img src="img/shop.png" class="card-img-top img3" alt="...">
           <div class="card-body d-none">
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <p class="card-text">This website is an exercise in making a website about a coffee shop, you can't make a reservation yet, but you can by filling in the form at the bottom, I made this website using HTML, CSS and JavaScript</p>
           </div>
         </div>
       </div>
@@ -179,15 +181,7 @@
         <div class="card" style="width: 18rem;">
           <img src="img/to-do-list.png" class="card-img-top img3" alt="...">
           <div class="card-body d-none">
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3 ms-2">
-        <div class="card" style="width: 18rem;">
-          <img src="img/sneakers.png" class="card-img-top img3" alt="...">
-          <div class="card-body d-none">
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <p class="card-text">website to do list, this is a website that can create (remind) what you are going to do, I made it using html, css, bootstrap, and javascript</p>
           </div>
         </div>
       </div>
@@ -337,6 +331,7 @@
          const cardBody = document.querySelectorAll('.card-body');
         card[i].addEventListener('click',function(){
           cardBody[i].classList.toggle('d-none');
+          cardBody[i].style.transition = '1.5s'
         })
       }
 
